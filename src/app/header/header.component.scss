@@ -1,0 +1,40 @@
+$darkBlue: #1c1427;
+$dark: #080211;
+$blue : #40394A;
+$green :#7ECA9C;
+$lightGreen: #CCFFBD;
+
+
+.container-fluid {
+  background-color: $darkBlue;
+  height: 100px;
+  width: 100%;
+}
+
+.titlea {
+  text-decoration: none;
+
+  .title {
+    color: $lightGreen;
+    font-size: 30px;
+  }
+
+  .subtitle {
+    color: $lightGreen;
+    font-size: 15px;
+  }
+}
+
+.projects {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: $lightGreen;
+  font-size: 40px;
+}

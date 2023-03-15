@@ -1,1 +1,68 @@
-<p>projects works!</p>
+<app-load-screen-end *ngIf="show == true"></app-load-screen-end>
+<app-load-screen *ngIf="goToRoot == true"></app-load-screen>
+
+<body class="scroll">
+  <div class="projects">
+    <div class="container-fluid mx-0 px-0">
+      <div class="row main mx-0 px-0">
+        <div class="col-md-6 col-sm-12 px-0 info">
+          <div class="row vh-100 justify-content-center prese">
+            <div class="col-auto">
+              <h3 class="hi mb-0">Hello there, I'm</h3>
+              <h2 class="title pt-0">Johan Daza</h2>
+              <a class="networks git" href="https://github.com/josteda99"
+                ><fa-icon [icon]="faGithub"></fa-icon
+              ></a>
+              <a class="networks twitter" href="https://twitter.com/josteda99"
+                ><fa-icon [icon]="faTwitter"></fa-icon
+              ></a>
+              <a
+                class="networks linkedin"
+                href="https://www.linkedin.com/in/johan-d-4103a5121/"
+                ><fa-icon [icon]="faLinkedin"></fa-icon
+              ></a>
+              <a
+                class="networks instagram"
+                href="https://www.instagram.com/latucoh/?hl=es-la"
+                ><fa-icon [icon]="faInstagram"></fa-icon
+              ></a>
+              <a
+                class="networks behance"
+                href="https://www.behance.net/johandaza?tracking_source=search_projects_recommended%7CjohanDaza"
+                ><fa-icon [icon]="faBehance"></fa-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 px-0 work">
+          <div class="row spe mx-0">
+            <a (click)="showAnimation('oriun')" class="col px-0 first">
+              <h3 class="pro-info tit">OriUN</h3>
+              <p class="pro-info des">
+                A web application to create and manage sporting events
+              </p>
+            </a>
+            <a (click)="showAnimation('memo')" class="col px-0 second">
+              <h3 class="pro-info tit">Memophoto</h3>
+              <p class="pro-info des">
+                Game that helps to develop photographic memory
+              </p>
+            </a>
+          </div>
+          <div class="row spe mx-0">
+            <a (click)="showAnimation('rass')" class="col px-0 three">
+              <h3 class="pro-info tit">Rassking</h3>
+              <p class="pro-info des">
+                Platformer game to break own records with house music
+              </p>
+            </a>
+            <a (click)="showAnimation('about')" class="col px-0 last">
+              <h3 class="pro-info tit">About me</h3>
+              <p class="pro-info des">Just Click me</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

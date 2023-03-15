@@ -1,0 +1,80 @@
+$darkBlue: #1c1427;
+$dark: #080211;
+$blue : #40394A;
+$green :#7ECA9C;
+$lightGreen: #CCFFBD;
+$red: #e1306c;
+
+.container-fluid {
+  background-color: $darkBlue;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+
+  .row {
+    min-height: 500px;
+  }
+
+  .columns {
+    padding-left: 10%;
+    padding-right: 10%;
+
+    .link img {
+      width: 200px;
+    }
+
+    .title {
+      color: $green;
+      font-size: 50px;
+
+      // animation: smooth ease-in-out 3s;
+
+      &:hover {
+        animation: glow 1.5s linear infinite;
+      }
+    }
+
+    .description {
+      color: $lightGreen
+    }
+
+    .technologies {
+      color: $red;
+    }
+
+    .tech {
+      color: $green;
+    }
+  }
+
+  .bord {
+    box-shadow: 1.5rem 1.5rem $dark;
+  }
+
+  .iconmemo {
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 1.5rem 1.5rem $dark;
+  }
+
+  @keyframes glow {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+
+  @keyframes smooth {
+    from {
+      opacity: 0%;
+    }
+
+    to {
+      opacity: 100%;
+    }
+  }
+
+}

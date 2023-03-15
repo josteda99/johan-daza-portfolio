@@ -1,0 +1,151 @@
+<app-load-screen-end *ngIf="show == true"></app-load-screen-end>
+<app-header></app-header>
+
+<div class="container-fluid" id="screen">
+  <div class="row pt-5 first">
+    <div class="col-sm-11 col-md-6 section">
+      <h3 class="salute pb-0 my-0">Hi!, I'm</h3>
+      <h2 class="name py-0 my-0">Johan Daza</h2>
+      <p class="description">
+        I am a developer and media editor from Colombia. I
+        <i class="fa fa-heart icon"></i> Cine and Videogames, interested in the
+        frontend spectrum and working with positive people.
+      </p>
+    </div>
+    <div class="col-sm-11 col-md-6 section">
+      <a href="#">
+        <div class="image-wrapper">
+          <img class="image-1" src="../assets/fotos.png" />
+          <img class="image-2" src="../assets/fotos.png" />
+          <img class="image-3" src="../assets/fotos.png" />
+          <img class="image-4" src="../assets/fotos.png" />
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="row pt-5 justify-content-center">
+    <div class="col-sm-10 col-md-10 skills section">
+      <h3 class="title-skills">Skills</h3>
+      <div class="body">
+        <div class="container">
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <span class="stars"></span>
+                <p class="java">
+                  HTML CSS Javascript Angular VueJS Typescript Bootstrap
+                </p>
+              </div>
+            </div>
+            <div class="face face2">
+              <h2>Frontend</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-10 col-md-10 skills section">
+      <div class="body">
+        <div class="container">
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <span class="stars"></span>
+                <p class="java">Figma - Adobe (XP - Photoshop - Illustrator)</p>
+              </div>
+            </div>
+            <div class="face face2">
+              <h2>Desing</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-10 col-md-10 skills section">
+      <div class="body">
+        <div class="container">
+          <div class="card">
+            <div class="face face1">
+              <div class="content">
+                <span class="stars"></span>
+                <p class="java">
+                  VS Code - Terminal - Git - Jira - Adobe Premiere - Unity 2020
+                </p>
+              </div>
+            </div>
+            <div class="face face2">
+              <h2>Tools</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row pt-5 contact-title d-inline-flex justify-content-center">
+      <div class="col">
+        <h3 class="title pt-5">Contact me</h3>
+        <br />
+        <p class="description pb-3 px-3">
+          If you have questions, don't hesitate to write me, I'm interested in
+          freelance Frontend projects or short projects ;D.
+        </p>
+      </div>
+    </div>
+    <div class="row py-4 contact-title">
+      <div class="col d-inline-flex justify-content-center">
+        <form
+          (ngSubmit)="onSubmit(contactForm)"
+          #contactForm="ngForm"
+          class="form"
+        >
+          <input
+            type="text"
+            name="name"
+            ngModel
+            required
+            #name="ngModel"
+            class="name-inp my-2"
+            id="name-inp"
+            placeholder="Name"
+          />
+          <input
+            type="text"
+            name="email"
+            ngModel
+            required
+            #email="ngModel"
+            class="email my-2"
+            id="email"
+            placeholder="Email"
+          />
+          <br />
+          <input
+            type="text"
+            name="subject"
+            ngModel
+            required
+            #subject="ngModel"
+            class="subject my-2"
+            id="subject"
+            placeholder="Subject"
+          />
+          <br />
+          <textarea
+            name="message"
+            ngModel
+            required
+            #message="ngModel"
+            class="message my-2"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <br />
+          <div class="col d-flex justify-content-end">
+            <button class="send px-5 mt-2" type="submit">Send Message!</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

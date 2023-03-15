@@ -1,0 +1,17 @@
+<app-load-screen *ngIf="show == true"></app-load-screen>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="header d-flex justify-content-between">
+        <a [routerLink]="['']" class="titlea">
+          <h2 class="title px-4 pt-4 py-0 mb-0">Johan Daza</h2>
+          <h3 class="subtitle px-4 pt-0 py-4">Developer</h3>
+        </a>
+        <button class="projects" (click)="showAnimation()">
+          <i class="fa fa-angle-left"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
