@@ -1,0 +1,41 @@
+<app-load-screen *ngIf="show == true"></app-load-screen>
+
+<body>
+  <div class="presentation full">
+    <div class="container">
+      <div class="row vh-100 justify-content-center align-items-center">
+        <div class="col-auto">
+          <h2 class="hi mb-0">Hello there, I'm</h2>
+          <h1 class="title pt-0">Johan Daza</h1>
+          <a class="networks git" href="https://github.com/josteda99"
+            ><fa-icon [icon]="faGithub"></fa-icon
+          ></a>
+          <a class="networks twitter" href="https://twitter.com/josteda99"
+            ><fa-icon [icon]="faTwitter"></fa-icon
+          ></a>
+          <a
+            class="networks linkedin"
+            href="https://www.linkedin.com/in/johan-d-4103a5121/"
+          >
+            <fa-icon [icon]="faLinkedin"></fa-icon
+          ></a>
+          <a
+            class="networks instagram"
+            href="https://www.instagram.com/latucoh/?hl=es-la"
+          >
+            <fa-icon [icon]="faInstagram"></fa-icon
+          ></a>
+          <a
+            class="networks behance"
+            href="https://www.behance.net/johandaza?tracking_source=search_projects_recommended%7CjohanDaza"
+          >
+            <fa-icon [icon]="faBehance"></fa-icon
+          ></a>
+        </div>
+      </div>
+    </div>
+    <button class="projects" (click)="showAnimation()">
+      <fa-icon [icon]="faAngleLeft"></fa-icon>
+    </button>
+  </div>
+</body>

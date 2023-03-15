@@ -1,0 +1,37 @@
+$darkBlue: #1c1427;
+$dark: #080211;
+$blue: #40394a;
+$green: #7eca9c;
+$lightGreen: #ccffbd;
+
+.container-fluid {
+  position: absolute;
+  z-index: 10;
+}
+
+.complete {
+  width: 100%;
+
+  .tran {
+    background-color: $dark;
+    height: 100vh;
+    width: 0vh;
+    float: right;
+    animation: hideScreen 1s;
+  }
+}
+
+@keyframes hideScreen {
+  0% {
+    width: 0vh;
+  }
+
+  100% {
+    width: 100%;
+  }
+
+  // 100% {
+  //   width: 100vh;
+  //   height: 0vh;
+  // }
+}
