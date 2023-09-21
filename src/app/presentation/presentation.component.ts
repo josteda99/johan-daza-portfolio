@@ -6,6 +6,7 @@ import {
   faTwitter,
   faInstagram,
   faBehance,
+  faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import { sleep } from 'sleep-ts';
@@ -21,6 +22,7 @@ export class PresentationComponent {
   faTwitter = faTwitter;
   faInstagram = faInstagram;
   faBehance = faBehance;
+  faYoutube = faYoutube;
   faAngleLeft = faAngleLeft;
   show: boolean = false;
   constructor(private router: Router) {}

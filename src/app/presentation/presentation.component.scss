@@ -78,6 +78,13 @@ $lightGreen: #ccffbd;
   animation-duration: 1s;
 }
 
+.youtube:hover {
+  color: #e1306c;
+  position: relative;
+  animation-name: hoveriano;
+  animation-duration: 1s;
+}
+
 h1 {
   background: linear-gradient(to right, $green, $lightGreen);
   -webkit-background-clip: text;
