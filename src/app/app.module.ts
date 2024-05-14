@@ -15,6 +15,7 @@ import { LoadScreenComponent } from './load-screen/load-screen.component';
 import { LoadScreenEndComponent } from './load-screen-end/load-screen-end.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HttpClientModule } from '@angular/common/http';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     LoadScreenEndComponent,
     HeaderComponent,
     RasskingComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,

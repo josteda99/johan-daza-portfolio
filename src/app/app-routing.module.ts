@@ -1,3 +1,4 @@
+import { GalleryComponent } from './gallery/gallery.component';
 import { RasskingComponent } from './rassking/rassking.component';
 import { AboutComponent } from './about/about.component';
 import { MemophotoComponent } from './memophoto/memophoto.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'projects/memophoto', component: MemophotoComponent },
   { path: 'projects/about', component: AboutComponent },
   { path: 'projects/rasskingball', component: RasskingComponent },
+  { path: 'projects/gallery', component: GalleryComponent },
 ];
 
 @NgModule({
