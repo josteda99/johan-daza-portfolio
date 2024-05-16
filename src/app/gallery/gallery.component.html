@@ -1,11 +1,62 @@
-<div class="container-fluid">
-  <ng-container *ngFor="let chunk of chunkArray(images, getRandomInt(2, 6))">
-    <div class="row">
-      <ng-container *ngFor="let image of chunk">
-        <div class="col">
-          <img [src]="image" alt="Image" class="w-100" />
-        </div>
-      </ng-container>
+<div class="external">
+  <div class="horizontal-scroll-wrapper">
+    <app-image-velocity
+      [imageInfo]="images[0]"
+      [velocities]="'faster'"
+    ></app-image-velocity>
+    <app-image-velocity
+      [imageInfo]="images[1]"
+      [velocities]="'slower vertical'"
+    ></app-image-velocity>
+    <app-image-velocity
+      [imageInfo]="images[2]"
+      [velocities]="'slower slower-down'"
+    ></app-image-velocity>
+    <app-image-velocity [imageInfo]="images[3]"></app-image-velocity>
+    <app-image-velocity
+      [imageInfo]="images[4]"
+      [velocities]="'slower'"
+    ></app-image-velocity>
+    <app-image-velocity
+      [imageInfo]="images[5]"
+      [velocities]="'faster1'"
+    ></app-image-velocity>
+    <app-image-velocity
+      [imageInfo]="images[6]"
+      [velocities]="'slower slower2'"
+    ></app-image-velocity>
+    <app-image-velocity [imageInfo]="images[7]"></app-image-velocity>
+    <app-image-velocity
+      [imageInfo]="images[8]"
+      [velocities]="'slower'"
+    ></app-image-velocity>
+    <app-image-velocity
+      [imageInfo]="images[9]"
+      [velocities]="'slower last'"
+    ></app-image-velocity>
+  </div>
+  <p class="scroll-info">Dale pa' bajo...</p>
+  <header>
+    <p>Johan Daza</p>
+    <h1>Portafolio</h1>
+    <p>Contactame</p>
+    <div class="d-flex align-items-center">
+      <a
+        class="networks instagram"
+        href="https://www.instagram.com/latucoh/?hl=es-la"
+      >
+        <fa-icon [icon]="faInstagram"></fa-icon
+      ></a>
+      <a
+        class="networks youtube"
+        href="https://www.youtube.com/channel/UCau8zPcEctvGTFzJ-qf8pwg"
+      >
+        <fa-icon [icon]="faYoutube"></fa-icon
+      ></a>
+      josteda99@gmail.com
     </div>
-  </ng-container>
+    <p>
+      Inspirado en: <a href="https://codepen.io/pehaa/pen/zYxbxQg">Paulina H</a>
+    </p>
+  </header>
 </div>

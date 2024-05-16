@@ -16,6 +16,8 @@ import { LoadScreenEndComponent } from './load-screen-end/load-screen-end.compon
 import { ProjectsComponent } from './projects/projects.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GalleryComponent } from './gallery/gallery.component';
+import { FullGalleryComponent } from './full-gallery/full-gallery.component';
+import { ImageVelocityComponent } from './image-velocity/image-velocity.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     HeaderComponent,
     RasskingComponent,
     GalleryComponent,
+    FullGalleryComponent,
+    ImageVelocityComponent,
   ],
   imports: [
     BrowserModule,

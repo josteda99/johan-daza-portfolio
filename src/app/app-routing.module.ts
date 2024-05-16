@@ -7,6 +7,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FullGalleryComponent } from './full-gallery/full-gallery.component';
 
 const routes: Routes = [
   { path: '', component: PresentationComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'projects/about', component: AboutComponent },
   { path: 'projects/rasskingball', component: RasskingComponent },
   { path: 'projects/gallery', component: GalleryComponent },
+  { path: 'projects/full-gallery', component: FullGalleryComponent },
 ];
 
 @NgModule({
