@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { ImageInformationI } from '../interfaces/image-information.interface';
+import { MatDialog } from '@angular/material/dialog';
+import { ImagePreviewComponent } from '../image-preview/image-preview.component';
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.scss'],
 })
-export class GalleryComponent {
+export class GalleryComponent implements OnInit {
+  private dialog = inject(MatDialog);
   public images: ImageInformationI[] = [
     {
       important: true,
@@ -88,4 +91,15 @@ export class GalleryComponent {
   ];
   public faInstagram = faInstagram;
   public faYoutube = faYoutube;
+  public isMobile = false;
+
+  public ngOnInit(): void {
+    this.isMobile = window.innerWidth <= 800;
+  }
+
+  public openDialog(image: ImageInformationI): void {
+    this.dialog.open(ImagePreviewComponent, {
+      data: { image },
+    });
+  }
 }

@@ -1,4 +1,4 @@
-<div class="external">
+<div *ngIf="!isMobile; else showMobileVersion" class="external">
   <div class="horizontal-scroll-wrapper">
     <app-image-velocity
       [imageInfo]="images[0]"
@@ -38,18 +38,20 @@
   <p class="scroll-info">Dale pa' bajo...</p>
   <header>
     <p>Johan Daza</p>
-    <h1>Portafolio</h1>
-    <p>Contactame</p>
+    <h2 class="m-0">Portafolio</h2>
+    <p>Contáctame</p>
     <div class="d-flex align-items-center">
       <a
         class="networks instagram"
         href="https://www.instagram.com/latucoh/?hl=es-la"
+        target="_blank"
       >
         <fa-icon [icon]="faInstagram"></fa-icon
       ></a>
       <a
         class="networks youtube"
         href="https://www.youtube.com/channel/UCau8zPcEctvGTFzJ-qf8pwg"
+        target="_blank"
       >
         <fa-icon [icon]="faYoutube"></fa-icon
       ></a>
@@ -57,7 +59,50 @@
     </div>
     <span>
       Inspirado en layout de:
-      <a href="https://codepen.io/pehaa/pen/zYxbxQg">Paulina H</a>
+      <a href="https://codepen.io/pehaa/pen/zYxbxQg" target="_blank"
+        >Paulina H</a
+      >
     </span>
   </header>
 </div>
+
+<ng-template #showMobileVersion>
+  <div class="m-5 pt-3">
+    <p>Johan Daza</p>
+    <h2 class="m-0">Portafolio</h2>
+    <p>Contáctame</p>
+    <div class="d-flex align-items-center">
+      <a
+        class="networks instagram"
+        href="https://www.instagram.com/latucoh/?hl=es-la"
+        target="_blank"
+      >
+        <fa-icon [icon]="faInstagram"></fa-icon
+      ></a>
+      <a
+        class="networks youtube"
+        href="https://www.youtube.com/channel/UCau8zPcEctvGTFzJ-qf8pwg"
+        target="_blank"
+      >
+        <fa-icon [icon]="faYoutube"></fa-icon
+      ></a>
+      josteda99@gmail.com
+    </div>
+    <span>
+      Inspirado en layout de:
+      <a href="https://codepen.io/pehaa/pen/zYxbxQg" target="_blank"
+        >Paulina H</a
+      >
+    </span>
+  </div>
+
+  <div class="w-full d-grid justify-content-center">
+    <img
+      *ngFor="let image of images"
+      [src]="image.src"
+      [alt]="image.alt"
+      class="simple-img m-3"
+      (click)="openDialog(image)"
+    />
+  </div>
+</ng-template>
