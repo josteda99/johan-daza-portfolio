@@ -1,14 +1,6 @@
 import { Component } from '@angular/core';
-import {
-  faLinkedin,
-  faGithub,
-  faTwitter,
-  faInstagram,
-  faBehance,
-  faYoutube,
-} from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { ImageInformationI } from '../interfaces/image-information.interface';
-
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
@@ -21,95 +13,79 @@ export class GalleryComponent {
       alt: 'foto',
       title: 'foto',
       description: 'foto',
-      src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/antiquedollboy.jpg',
+      src: '/assets/photos/gallery/1.jpg',
     },
     {
       important: true,
       alt: 'foto',
       title: 'foto',
       description: 'foto',
-      src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/paris-cafe-terrace.jpg',
+      src: '/assets/photos/gallery/2.jpg',
     },
     {
       important: true,
       alt: 'foto',
       title: 'foto',
       description: 'foto',
-      src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/windowshopclock.jpg',
+      src: '/assets/photos/gallery/3.jpg',
     },
     {
       important: true,
       alt: 'foto',
       title: 'foto',
       description: 'foto',
-      src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/swanduckriver.jpg',
+      src: '/assets/photos/gallery/4.jpg',
     },
     {
       important: true,
       alt: 'foto',
       title: 'foto',
       description: 'foto',
-      src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/cafe-terrace.jpg',
+      src: '/assets/photos/gallery/5.jpg',
     },
     {
       important: true,
       alt: 'foto',
       title: 'foto',
       description: 'foto',
-      src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/paris-seine-boat.jpg',
+      src: '/assets/photos/gallery/6.jpg',
     },
     {
       important: true,
       alt: 'foto',
       title: 'foto',
       description: 'foto',
-      src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/old-man-river.jpg',
+      src: '/assets/photos/gallery/7.jpg',
     },
     {
       important: true,
       alt: 'foto',
       title: 'foto',
       description: 'foto',
-      src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/cafe-table-street.jpg',
+      src: '/assets/photos/gallery/8.jpg',
     },
     {
       important: true,
       alt: 'foto',
       title: 'foto',
       description: 'foto',
-      src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/street-scene-people.jpg',
+      src: '/assets/photos/gallery/9.jpg',
     },
     {
       important: true,
       alt: 'foto',
       title: 'foto',
       description: 'foto',
-      src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/shop-window-reflection.jpg',
+      src: '/assets/photos/gallery/10.jpg',
     },
     {
       important: true,
       alt: 'foto',
       title: 'foto',
       description: 'foto',
-      src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/notre-dame-river-boat.jpg',
+      src: '/assets/photos/gallery/11.jpg',
     },
   ];
   public faInstagram = faInstagram;
   public faYoutube = faYoutube;
-
-  getRandomInt(min: number, max: number): number {
-    return Math.floor(Math.random() * (max - min)) + min;
-  }
-
-  public chunkArray(array: any[], chunkSize: number): any[][] {
-    const chunks = [];
-    let index = 0;
-    while (index < array.length) {
-      chunks.push(array.slice(index, index + chunkSize));
-      index += chunkSize;
-    }
-    console.log(chunks);
-    return chunks;
-  }
 }
-// https://codepen.io/t_afif/pen/abGvYVX

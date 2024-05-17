@@ -4,4 +4,5 @@ export interface ImageInformationI {
   alt: string;
   title: string;
   description: string;
+  date?: string;
 }

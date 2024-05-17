@@ -18,7 +18,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FullGalleryComponent } from './full-gallery/full-gallery.component';
 import { ImageVelocityComponent } from './image-velocity/image-velocity.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ImagePreviewComponent } from './image-preview/image-preview.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +36,7 @@ import { ImageVelocityComponent } from './image-velocity/image-velocity.componen
     GalleryComponent,
     FullGalleryComponent,
     ImageVelocityComponent,
+    ImagePreviewComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +44,8 @@ import { ImageVelocityComponent } from './image-velocity/image-velocity.componen
     FormsModule,
     HttpClientModule,
     FontAwesomeModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
