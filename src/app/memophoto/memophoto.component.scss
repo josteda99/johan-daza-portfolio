@@ -1,15 +1,15 @@
 $darkBlue: #1c1427;
 $dark: #080211;
-$blue : #40394A;
-$green :#7ECA9C;
-$lightGreen: #CCFFBD;
+$blue: #40394a;
+$green: #7eca9c;
+$lightGreen: #ccffbd;
 $red: #e1306c;
 
 .container-fluid {
   background-color: $darkBlue;
   height: 100%;
   width: 100%;
-  min-height: 100vh;
+  // min-height: 100vh;
 
   .row {
     min-height: 500px;
@@ -35,7 +35,7 @@ $red: #e1306c;
     }
 
     .description {
-      color: $lightGreen
+      color: $lightGreen;
     }
 
     .technologies {
@@ -76,5 +76,4 @@ $red: #e1306c;
       opacity: 100%;
     }
   }
-
 }

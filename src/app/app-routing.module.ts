@@ -8,16 +8,17 @@ import { PresentationComponent } from './presentation/presentation.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FullGalleryComponent } from './full-gallery/full-gallery.component';
+import { VideogamesComponent } from './videogames/videogames.component';
+import { AppsComponent } from './apps/apps.component';
 
 const routes: Routes = [
   { path: '', component: PresentationComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'projects/oriun', component: OriunComponent },
-  { path: 'projects/memophoto', component: MemophotoComponent },
   { path: 'projects/about', component: AboutComponent },
-  { path: 'projects/rasskingball', component: RasskingComponent },
   { path: 'projects/gallery', component: GalleryComponent },
   { path: 'projects/full-gallery', component: FullGalleryComponent },
+  { path: 'projects/videogames', component: VideogamesComponent },
+  { path: 'projects/apps', component: AppsComponent },
 ];
 
 @NgModule({

@@ -21,6 +21,8 @@ import { ImageVelocityComponent } from './image-velocity/image-velocity.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ImagePreviewComponent } from './image-preview/image-preview.component';
+import { VideogamesComponent } from './videogames/videogames.component';
+import { AppsComponent } from './apps/apps.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +39,8 @@ import { ImagePreviewComponent } from './image-preview/image-preview.component';
     FullGalleryComponent,
     ImageVelocityComponent,
     ImagePreviewComponent,
+    VideogamesComponent,
+    AppsComponent,
   ],
   imports: [
     BrowserModule,

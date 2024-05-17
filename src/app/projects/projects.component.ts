@@ -37,10 +37,9 @@ export class ProjectsComponent {
     this.goToRoot = true;
     sleep(1000)
       .then(() => {
-        if (root == 'oriun') this.router.navigate(['projects/oriun']);
+        if (root == 'videogames') this.router.navigate(['projects/videogames']);
         if (root == 'about') this.router.navigate(['projects/about']);
-        if (root == 'memo') this.router.navigate(['projects/memophoto']);
-        if (root == 'rass') this.router.navigate(['projects/rasskingball']);
+        if (root == 'apps') this.router.navigate(['projects/apps']);
       })
       .then((response) => {
         console.log(response);
