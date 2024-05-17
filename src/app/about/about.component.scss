@@ -1,16 +1,15 @@
 $darkBlue: #1c1427;
 $dark: #080211;
-$blue : #40394A;
-$green :#7ECA9C;
-$lightGreen: #CCFFBD;
+$blue: #40394a;
+$green: #7eca9c;
+$lightGreen: #ccffbd;
 $red: #e1306c;
 
-
 .container-fluid {
-  background-color: $darkBlue;
-  height: 100%;
+  height: auto;
   width: 100%;
   min-height: 100vh;
+  background-color: $darkBlue;
 
   .first {
     align-items: center;
@@ -26,7 +25,7 @@ $red: #e1306c;
     font-size: 50px;
 
     &:hover {
-      animation: glow .5s linear infinite .5s;
+      animation: glow 0.5s linear infinite 0.5s;
     }
   }
 
@@ -47,7 +46,6 @@ $red: #e1306c;
     .icon {
       color: $red;
     }
-
   }
 
   .section {
@@ -60,8 +58,6 @@ $red: #e1306c;
     }
   }
 }
-
-
 
 .skills {
   padding-left: 30px;
@@ -168,23 +164,25 @@ $red: #e1306c;
     }
 
     .card:nth-child(2) .face.face2 {
-      background-image: linear-gradient(40deg,
-          #fc00ff 0%,
-          #00fffc 45%,
-          #fffc00 100%);
+      background-image: linear-gradient(
+        40deg,
+        #fc00ff 0%,
+        #00fffc 45%,
+        #fffc00 100%
+      );
       // border-radius: 15px;
     }
 
     .card:nth-child(3) .face.face2 {
-      background-image: linear-gradient(40deg,
-          #00fffc 0%,
-          #fc00ff 45%,
-          #fffc00 100%);
+      background-image: linear-gradient(
+        40deg,
+        #00fffc 0%,
+        #fc00ff 45%,
+        #fffc00 100%
+      );
       // border-radius: 15px;
     }
   }
-
-
 }
 
 @media only screen and (min-width: 479px) {
