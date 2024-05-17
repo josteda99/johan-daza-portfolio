@@ -85,13 +85,6 @@ $lightGreen: #ccffbd;
   animation-duration: 1s;
 }
 
-h1 {
-  background: linear-gradient(to right, $green, $lightGreen);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-}
-
 @keyframes hoveriano {
   0% {
     bottom: 0px;
