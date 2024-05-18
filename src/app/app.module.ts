@@ -23,6 +23,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ImagePreviewComponent } from './image-preview/image-preview.component';
 import { VideogamesComponent } from './videogames/videogames.component';
 import { AppsComponent } from './apps/apps.component';
+import { MatCardModule } from '@angular/material/card';
+import { NgxMasonryModule } from 'ngx-masonry';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +52,8 @@ import { AppsComponent } from './apps/apps.component';
     FontAwesomeModule,
     BrowserAnimationsModule,
     MatDialogModule,
+    MatCardModule,
+    NgxMasonryModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
