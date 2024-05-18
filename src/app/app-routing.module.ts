@@ -1,8 +1,5 @@
 import { GalleryComponent } from './gallery/gallery.component';
-import { RasskingComponent } from './rassking/rassking.component';
 import { AboutComponent } from './about/about.component';
-import { MemophotoComponent } from './memophoto/memophoto.component';
-import { OriunComponent } from './oriun/oriun.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { NgModule } from '@angular/core';
