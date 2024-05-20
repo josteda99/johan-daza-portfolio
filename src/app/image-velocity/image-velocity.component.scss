@@ -8,6 +8,7 @@
   transform: rotate(90deg) translateZ(0.1px) scale(0.9) translateX(0px)
     translateY(-3vh);
   transition: 1s;
+  cursor: pointer;
 }
 
 .img-wrapper:hover {

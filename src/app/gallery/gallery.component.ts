@@ -102,4 +102,8 @@ export class GalleryComponent implements OnInit {
       data: { image },
     });
   }
+  public copyEmailClipboard(): void {
+    navigator.clipboard.writeText('josteda99@gmail.com');
+    alert('Copiado...');
+  }
 }
