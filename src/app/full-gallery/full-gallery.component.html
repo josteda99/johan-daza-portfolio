@@ -8,20 +8,8 @@
         </a>
         <div class="d-flex align-items-center">
           <p class="m-3">Contáctame</p>
-          <a
-            class="networks instagram"
-            href="https://www.instagram.com/latucoh/?hl=es-la"
-            target="_blank"
-          >
-            <fa-icon [icon]="faInstagram"></fa-icon
-          ></a>
-          <a
-            class="networks youtube"
-            href="https://www.youtube.com/channel/UCau8zPcEctvGTFzJ-qf8pwg"
-            target="_blank"
-          >
-            <fa-icon [icon]="faYoutube"></fa-icon
-          ></a>
+          <a class="networks instagram" href="https://www.instagram.com/latucoh/?hl=es-la" target="_blank"> <fa-icon [icon]="faInstagram"></fa-icon></a>
+          <a class="networks youtube" href="https://www.youtube.com/channel/UCau8zPcEctvGTFzJ-qf8pwg" target="_blank"> <fa-icon [icon]="faYoutube"></fa-icon></a>
           <a (click)="copyEmailClipboard()">josteda99@gmail.com</a>
         </div>
       </div>
@@ -31,19 +19,8 @@
 
 <div class="work">
   <div class="masonry-demo">
-    <ngx-masonry
-      [options]="masonryOptions"
-      style="width: 100%"
-      [ordered]="true"
-    >
-      <div
-        ngxMasonryItem
-        [prepend]="true"
-        *ngFor="let image of images; index as idx"
-        style="width: 32%"
-        class="my-2 shadow-card photo"
-        (click)="openDialog(image)"
-      >
+    <ngx-masonry [options]="masonryOptions" style="width: 100%" [ordered]="true">
+      <div ngxMasonryItem [prepend]="true" *ngFor="let image of images; index as idx" style="width: 32%" class="my-2 shadow-card photo" (click)="openDialog(image)">
         <img [src]="image.src" width="100%" />
       </div>
     </ngx-masonry>
