@@ -1,39 +1,15 @@
 <div *ngIf="!isMobile; else showMobileVersion" class="external">
   <div class="horizontal-scroll-wrapper">
-    <app-image-velocity
-      [imageInfo]="images[0]"
-      [velocities]="'faster1'"
-    ></app-image-velocity>
-    <app-image-velocity
-      [imageInfo]="images[1]"
-      [velocities]="'slower'"
-    ></app-image-velocity>
-    <app-image-velocity
-      [imageInfo]="images[2]"
-      [velocities]="'slower slower-down'"
-    ></app-image-velocity>
+    <app-image-velocity [imageInfo]="images[0]" [velocities]="'faster1'"></app-image-velocity>
+    <app-image-velocity [imageInfo]="images[1]" [velocities]="'slower'"></app-image-velocity>
+    <app-image-velocity [imageInfo]="images[2]" [velocities]="'slower slower-down'"></app-image-velocity>
     <app-image-velocity [imageInfo]="images[3]"></app-image-velocity>
-    <app-image-velocity
-      [imageInfo]="images[4]"
-      [velocities]="'slower'"
-    ></app-image-velocity>
-    <app-image-velocity
-      [imageInfo]="images[5]"
-      [velocities]="'faster1'"
-    ></app-image-velocity>
-    <app-image-velocity
-      [imageInfo]="images[6]"
-      [velocities]="'slower slower2'"
-    ></app-image-velocity>
+    <app-image-velocity [imageInfo]="images[4]" [velocities]="'slower'"></app-image-velocity>
+    <app-image-velocity [imageInfo]="images[5]" [velocities]="'faster1'"></app-image-velocity>
+    <app-image-velocity [imageInfo]="images[6]" [velocities]="'slower slower2'"></app-image-velocity>
     <app-image-velocity [imageInfo]="images[7]"></app-image-velocity>
-    <app-image-velocity
-      [imageInfo]="images[8]"
-      [velocities]="'slower'"
-    ></app-image-velocity>
-    <app-image-velocity
-      [imageInfo]="images[9]"
-      [velocities]="'slower2'"
-    ></app-image-velocity>
+    <app-image-velocity [imageInfo]="images[8]" [velocities]="'slower'"></app-image-velocity>
+    <app-image-velocity [imageInfo]="images[9]" [velocities]="'slower2'"></app-image-velocity>
   </div>
   <p class="scroll-info">Scroll hacia abajo...</p>
   <header>
@@ -41,29 +17,13 @@
     <h2 class="m-0">Portafolio</h2>
     <p>Contáctame</p>
     <div class="d-flex align-items-center">
-      <a
-        class="networks instagram"
-        href="https://www.instagram.com/latucoh/?hl=es-la"
-        target="_blank"
-      >
-        <fa-icon [icon]="faInstagram"></fa-icon
-      ></a>
-      <a
-        class="networks youtube"
-        href="https://www.youtube.com/channel/UCau8zPcEctvGTFzJ-qf8pwg"
-        target="_blank"
-      >
-        <fa-icon [icon]="faYoutube"></fa-icon
-      ></a>
-      <a class="email-label" (click)="copyEmailClipboard()"
-        >josteda99@gmail.com</a
-      >
+      <a class="networks instagram" href="https://www.instagram.com/latucoh/?hl=es-la" target="_blank"> <fa-icon [icon]="faInstagram"></fa-icon></a>
+      <a class="networks youtube" href="https://www.youtube.com/channel/UCau8zPcEctvGTFzJ-qf8pwg" target="_blank"> <fa-icon [icon]="faYoutube"></fa-icon></a>
+      <a class="email-label" (click)="copyEmailClipboard()">josteda99@gmail.com</a>
     </div>
     <span>
       Inspirado en layout de:
-      <a href="https://codepen.io/pehaa/pen/zYxbxQg" target="_blank"
-        >Paulina H</a
-      >
+      <a href="https://codepen.io/pehaa/pen/zYxbxQg" target="_blank">Paulina H</a>
     </span>
     <p><a routerLink="/projects/full-gallery">Mas fotos aqui</a></p>
   </header>
@@ -75,40 +35,20 @@
     <h2 class="m-0">Portafolio</h2>
     <p>Contáctame</p>
     <div class="d-flex align-items-center">
-      <a
-        class="networks instagram"
-        href="https://www.instagram.com/latucoh/?hl=es-la"
-        target="_blank"
-      >
-        <fa-icon [icon]="faInstagram"></fa-icon
-      ></a>
-      <a
-        class="networks youtube"
-        href="https://www.youtube.com/channel/UCau8zPcEctvGTFzJ-qf8pwg"
-        target="_blank"
-      >
-        <fa-icon [icon]="faYoutube"></fa-icon
-      ></a>
-      <a class="email-label" (click)="copyEmailClipboard()"
-        >josteda99@gmail.com</a
-      >
+      <a class="networks instagram" href="https://www.instagram.com/latucoh/?hl=es-la" target="_blank"> <fa-icon [icon]="faInstagram"></fa-icon></a>
+      <a class="networks youtube" href="https://www.youtube.com/channel/UCau8zPcEctvGTFzJ-qf8pwg" target="_blank"> <fa-icon [icon]="faYoutube"></fa-icon></a>
+      <a class="email-label" (click)="copyEmailClipboard()">josteda99@gmail.com</a>
     </div>
     <span>
       Inspirado en layout de:
-      <a href="https://codepen.io/pehaa/pen/zYxbxQg" target="_blank"
-        >Paulina H</a
-      >
+      <a href="https://codepen.io/pehaa/pen/zYxbxQg" target="_blank">Paulina H</a>
     </span>
-    <a routerLink="/projects/full-gallery">Mas fotos aqui</a>
+    <p>
+      <a routerLink="/projects/full-gallery">Mas fotos aqui</a>
+    </p>
   </div>
 
   <div class="w-full d-grid justify-content-center">
-    <img
-      *ngFor="let image of images"
-      [src]="image.src"
-      [alt]="image.alt"
-      class="simple-img m-3"
-      (click)="openDialog(image)"
-    />
+    <img *ngFor="let image of images" [src]="image.src" [alt]="image.alt" class="simple-img m-3" (click)="openDialog(image)" />
   </div>
 </ng-template>

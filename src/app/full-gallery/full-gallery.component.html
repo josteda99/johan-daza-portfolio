@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
   <div class="row">
     <div class="col">
       <div class="d-flex justify-content-between">
@@ -15,14 +15,29 @@
       </div>
     </div>
   </div>
+</div> -->
+
+<div class="header d-flex justify-content-between">
+  <div>
+    <a [routerLink]="['']" class="titlea">
+      <h3 class="title px-3 pt-4 py-0 mb-0">Johan Daza</h3>
+      <h4 class="subtitle px-3 pt-0 py-4 mb-0">Fotos</h4>
+    </a>
+  </div>
+  <div>
+    <p class="px-3 pt-4 py-0 mb-0 text-end">Contáctame</p>
+    <div class="d-flex justify-content-end">
+      <a class="networks instagram" href="https://www.instagram.com/latucoh/?hl=es-la" target="_blank"> <fa-icon [icon]="faInstagram"></fa-icon></a>
+      <a class="networks youtube" href="https://www.youtube.com/channel/UCau8zPcEctvGTFzJ-qf8pwg" target="_blank"> <fa-icon [icon]="faYoutube"></fa-icon></a>
+    </div>
+    <p class="email px-3 pt-0 py-4 mb-0 text-end" (click)="copyEmailClipboard()">josteda99@gmail.com</p>
+  </div>
 </div>
 
-<div class="work">
-  <div class="masonry-demo">
-    <ngx-masonry [options]="masonryOptions" style="width: 100%" [ordered]="true">
-      <div ngxMasonryItem [prepend]="true" *ngFor="let image of images; index as idx" style="width: 32%" class="my-2 shadow-card photo" (click)="openDialog(image)">
-        <img [src]="image.src" width="100%" />
-      </div>
-    </ngx-masonry>
-  </div>
+<div class="masonry-demo">
+  <ngx-masonry [options]="masonryOptions" style="width: 100%" [ordered]="true">
+    <div ngxMasonryItem [prepend]="true" *ngFor="let image of images; index as idx" style="width: 33%" class="p-2 shadow-card photo" (click)="openDialog(image)">
+      <img [src]="image.src" width="100%" />
+    </div>
+  </ngx-masonry>
 </div>

@@ -18,11 +18,12 @@ export class FullGalleryComponent implements OnInit {
   public faInstagram = faInstagram;
   public faYoutube = faYoutube;
   public masonryOptions: NgxMasonryOptions = {
-    gutter: 20,
+    // gutter: 15,
     animations: {
       show: [style({ opacity: 0 }), animate('1000ms ease-in', style({ opacity: 1 }))],
       hide: [style({ opacity: '*' }), animate('1000ms ease-in', style({ opacity: 0 }))]
-    }
+    },
+    initLayout: false
   };
   public images: ImageInformationI[] = allPhotos;
 
