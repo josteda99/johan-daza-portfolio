@@ -22,9 +22,11 @@ export class GalleryComponent implements OnInit {
 
   public openDialog(image: ImageInformationI): void {
     this.dialog.open(ImagePreviewComponent, {
-      data: { image }
+      data: { image },
+      backdropClass: 'backdropBackground'
     });
   }
+
   public copyEmailClipboard(): void {
     navigator.clipboard.writeText('josteda99@gmail.com');
     alert('Copiado...');

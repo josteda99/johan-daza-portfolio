@@ -5,7 +5,7 @@ import { ImagePreviewComponent } from '../image-preview/image-preview.component'
 @Component({
   selector: 'app-image-velocity',
   templateUrl: './image-velocity.component.html',
-  styleUrls: ['./image-velocity.component.scss'],
+  styleUrls: ['./image-velocity.component.scss']
 })
 export class ImageVelocityComponent {
   private dialog = inject(MatDialog);
@@ -16,6 +16,7 @@ export class ImageVelocityComponent {
   public openDialog(): void {
     this.dialog.open(ImagePreviewComponent, {
       data: { image: this.imageInfo },
+      backdropClass: 'backdropBackground'
     });
   }
 }
