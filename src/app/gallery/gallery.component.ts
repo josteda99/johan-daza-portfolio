@@ -18,6 +18,16 @@ export class GalleryComponent implements OnInit {
 
   public ngOnInit(): void {
     this.isMobile = window.innerWidth <= 800;
+    this.randomGallery();
+  }
+
+  public randomGallery(): void {
+    let currentIndex = this.images.length;
+    while (currentIndex != 0) {
+      let randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+      [this.images[currentIndex], this.images[randomIndex]] = [this.images[randomIndex], this.images[currentIndex]];
+    }
   }
 
   public openDialog(image: ImageInformationI): void {

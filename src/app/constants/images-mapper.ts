@@ -1,7 +1,7 @@
 import { ImageInformationI } from '../interfaces/image-information.interface';
 
 export const allPhotos: ImageInformationI[] = [
-  { important: false, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/0010.jpg' },
+  { important: true, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/0010.jpg' },
   { important: false, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/0013.jpg' },
   { important: true, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/0014.jpg' },
   { important: false, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/0015.jpg' },
@@ -39,7 +39,7 @@ export const allPhotos: ImageInformationI[] = [
   { important: true, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/114.jpg' },
   { important: true, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/115.jpg' },
   { important: false, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/116.jpg' },
-  { important: false, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/117.jpg' },
+  { important: true, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/117.jpg' },
   { important: false, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/118.jpg' },
   { important: false, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/119.jpg' },
   { important: false, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/120.jpg' },
@@ -54,5 +54,5 @@ export const allPhotos: ImageInformationI[] = [
   { important: false, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/129.jpg' },
   { important: false, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/130.jpg' },
   { important: true, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/131.jpg' },
-  { important: true, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/132.jpg' }
+  { important: false, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/132.jpg' }
 ];
