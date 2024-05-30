@@ -54,5 +54,8 @@ export const allPhotos: ImageInformationI[] = [
   { important: false, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/129.jpg' },
   { important: false, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/130.jpg' },
   { important: true, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/131.jpg' },
-  { important: false, alt: 'unnamed', title: 'unnamed', description: 'unnamed', src: 'assets/photos/gallery/132.jpg' }
+  { important: false, alt: 'lluvia parte 1', title: 'lluvia parte 1', description: 'lluvia parte 1', src: 'assets/photos/gallery/132.jpg' },
+  { important: false, alt: 'lluvia parte 2', title: 'lluvia parte 2', description: 'lluvia parte 2', src: 'assets/photos/gallery/133.jpg' },
+  { important: false, alt: 'lluvia parte 3', title: 'lluvia parte 3', description: 'lluvia parte 3', src: 'assets/photos/gallery/134.jpg' },
+  { important: false, alt: 'lluvia parte 4', title: 'lluvia parte 4', description: 'lluvia parte 4', src: 'assets/photos/gallery/135.jpg' }
 ];
