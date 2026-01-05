@@ -58,5 +58,15 @@ export const allPhotos: ImageInformationI[] = [
   { important: false, alt: 'lluvia', title: 'lluvia', description: 'lluvia', src: 'assets/photos/gallery/133.jpg' },
   { important: false, alt: 'lluvia', title: 'lluvia', description: 'lluvia', src: 'assets/photos/gallery/134.jpg' },
   { important: false, alt: 'lluvia', title: 'lluvia', description: 'lluvia', src: 'assets/photos/gallery/135.jpg' },
-  { important: false, alt: 'lluvia', title: 'lluvia', description: 'lluvia', src: 'assets/photos/gallery/136.jpg' }
+  { important: false, alt: 'lluvia', title: 'lluvia', description: 'lluvia', src: 'assets/photos/gallery/136.jpg' },
+  { important: false, alt: 'humedal', title: 'humedal', description: 'humedal', src: 'assets/photos/gallery/137.jpg' },
+  { important: false, alt: 'humedal', title: 'humedal', description: 'humedal', src: 'assets/photos/gallery/138.jpg' },
+  { important: false, alt: 'humedal', title: 'humedal', description: 'humedal', src: 'assets/photos/gallery/139.jpg' },
+  { important: false, alt: 'humedal', title: 'humedal', description: 'humedal', src: 'assets/photos/gallery/140.jpg' },
+  { important: false, alt: 'humedal', title: 'humedal', description: 'humedal', src: 'assets/photos/gallery/141.jpg' },
+  { important: false, alt: 'humedal', title: 'humedal', description: 'humedal', src: 'assets/photos/gallery/142.jpg' },
+  { important: false, alt: 'humedal', title: 'humedal', description: 'humedal', src: 'assets/photos/gallery/143.jpg' },
+  { important: false, alt: 'humedal', title: 'humedal', description: 'humedal', src: 'assets/photos/gallery/144.jpg' },
+  { important: false, alt: 'humedal', title: 'humedal', description: 'humedal', src: 'assets/photos/gallery/145.jpg' },
+  { important: false, alt: 'humedal', title: 'humedal', description: 'humedal', src: 'assets/photos/gallery/146.jpg' }
 ];
