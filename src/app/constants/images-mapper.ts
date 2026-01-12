@@ -92,5 +92,13 @@ export const allPhotos: ImageInformationI[] = [
   { important: false, alt: 'paipa', title: 'paipa', description: 'paipa', src: 'assets/photos/gallery/167.jpg' },
   { important: false, alt: 'paipa', title: 'paipa', description: 'paipa', src: 'assets/photos/gallery/168.jpg' },
   { important: false, alt: 'paipa', title: 'paipa', description: 'paipa', src: 'assets/photos/gallery/169.jpg' },
-  { important: false, alt: 'paipa', title: 'paipa', description: 'paipa', src: 'assets/photos/gallery/170.jpg' }
+  { important: false, alt: 'paipa', title: 'paipa', description: 'paipa', src: 'assets/photos/gallery/170.jpg' },
+  { important: false, alt: 'Cementera Pueblo Fantasma', title: 'Cementera Pueblo Fantasma', description: 'Cementera Pueblo Fantasma', src: 'assets/photos/gallery/171.jpg' },
+  { important: false, alt: 'Cementera Pueblo Fantasma', title: 'Cementera Pueblo Fantasma', description: 'Cementera Pueblo Fantasma', src: 'assets/photos/gallery/172.jpg' },
+  { important: false, alt: 'Cementera Pueblo Fantasma', title: 'Cementera Pueblo Fantasma', description: 'Cementera Pueblo Fantasma', src: 'assets/photos/gallery/173.jpg' },
+  { important: false, alt: 'Cementera Pueblo Fantasma', title: 'Cementera Pueblo Fantasma', description: 'Cementera Pueblo Fantasma', src: 'assets/photos/gallery/174.jpg' },
+  { important: false, alt: 'Cementera Pueblo Fantasma', title: 'Cementera Pueblo Fantasma', description: 'Cementera Pueblo Fantasma', src: 'assets/photos/gallery/175.jpg' },
+  { important: false, alt: 'Cementera Pueblo Fantasma', title: 'Cementera Pueblo Fantasma', description: 'Cementera Pueblo Fantasma', src: 'assets/photos/gallery/176.jpg' },
+  { important: false, alt: 'Cementera Pueblo Fantasma', title: 'Cementera Pueblo Fantasma', description: 'Cementera Pueblo Fantasma', src: 'assets/photos/gallery/177.jpg' },
+  { important: false, alt: 'Cementera Pueblo Fantasma', title: 'Cementera Pueblo Fantasma', description: 'Cementera Pueblo Fantasma', src: 'assets/photos/gallery/178.jpg' }
 ];
