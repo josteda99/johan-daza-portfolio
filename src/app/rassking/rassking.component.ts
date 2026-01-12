@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { sleep } from 'sleep-ts';
 
 @Component({
   selector: 'app-rassking',
   templateUrl: './rassking.component.html',
-  styleUrls: ['./rassking.component.scss'],
+  styleUrls: ['./rassking.component.scss']
 })
 export class RasskingComponent implements OnInit {
   show: boolean = true;
@@ -12,8 +11,6 @@ export class RasskingComponent implements OnInit {
 
   ngOnInit(): void {
     this.show = true;
-    sleep(1000).then(() => {
-      this.show = false;
-    });
+    setTimeout(() => (this.show = false), 1000);
   }
 }
