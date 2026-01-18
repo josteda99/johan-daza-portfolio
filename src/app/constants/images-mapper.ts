@@ -100,5 +100,17 @@ export const allPhotos: ImageInformationI[] = [
   { important: false, alt: 'Cementera Pueblo Fantasma', title: 'Cementera Pueblo Fantasma', description: 'Cementera Pueblo Fantasma', src: 'assets/photos/gallery/175.jpg' },
   { important: false, alt: 'Cementera Pueblo Fantasma', title: 'Cementera Pueblo Fantasma', description: 'Cementera Pueblo Fantasma', src: 'assets/photos/gallery/176.jpg' },
   { important: false, alt: 'Cementera Pueblo Fantasma', title: 'Cementera Pueblo Fantasma', description: 'Cementera Pueblo Fantasma', src: 'assets/photos/gallery/177.jpg' },
-  { important: false, alt: 'Cementera Pueblo Fantasma', title: 'Cementera Pueblo Fantasma', description: 'Cementera Pueblo Fantasma', src: 'assets/photos/gallery/178.jpg' }
+  { important: false, alt: 'Cementera Pueblo Fantasma', title: 'Cementera Pueblo Fantasma', description: 'Cementera Pueblo Fantasma', src: 'assets/photos/gallery/178.jpg' },
+  { important: false, alt: 'Farallones de Sutatausa', title: 'Farallones de Sutatausa', description: 'Farallones de Sutatausa', src: 'assets/photos/gallery/179.jpg' },
+  { important: false, alt: 'Farallones de Sutatausa', title: 'Farallones de Sutatausa', description: 'Farallones de Sutatausa', src: 'assets/photos/gallery/180.jpg' },
+  { important: false, alt: 'Farallones de Sutatausa', title: 'Farallones de Sutatausa', description: 'Farallones de Sutatausa', src: 'assets/photos/gallery/181.jpg' },
+  { important: false, alt: 'Farallones de Sutatausa', title: 'Farallones de Sutatausa', description: 'Farallones de Sutatausa', src: 'assets/photos/gallery/182.jpg' },
+  { important: false, alt: 'Farallones de Sutatausa', title: 'Farallones de Sutatausa', description: 'Farallones de Sutatausa', src: 'assets/photos/gallery/183.jpg' },
+  { important: false, alt: 'Farallones de Sutatausa', title: 'Farallones de Sutatausa', description: 'Farallones de Sutatausa', src: 'assets/photos/gallery/184.jpg' },
+  { important: false, alt: 'Farallones de Sutatausa', title: 'Farallones de Sutatausa', description: 'Farallones de Sutatausa', src: 'assets/photos/gallery/185.jpg' },
+  { important: false, alt: 'Farallones de Sutatausa', title: 'Farallones de Sutatausa', description: 'Farallones de Sutatausa', src: 'assets/photos/gallery/186.jpg' },
+  { important: false, alt: 'Farallones de Sutatausa', title: 'Farallones de Sutatausa', description: 'Farallones de Sutatausa', src: 'assets/photos/gallery/187.jpg' },
+  { important: false, alt: 'Farallones de Sutatausa', title: 'Farallones de Sutatausa', description: 'Farallones de Sutatausa', src: 'assets/photos/gallery/188.jpg' },
+  { important: false, alt: 'Farallones de Sutatausa', title: 'Farallones de Sutatausa', description: 'Farallones de Sutatausa', src: 'assets/photos/gallery/189.jpg' },
+  { important: false, alt: 'Farallones de Sutatausa', title: 'Farallones de Sutatausa', description: 'Farallones de Sutatausa', src: 'assets/photos/gallery/190.jpg' }
 ];
