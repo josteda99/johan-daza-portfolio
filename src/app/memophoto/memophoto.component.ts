@@ -11,5 +11,6 @@ export class MemophotoComponent implements OnInit {
 
   ngOnInit(): void {
     this.show = true;
+    setTimeout(() => (this.show = false), 1000);
   }
 }
