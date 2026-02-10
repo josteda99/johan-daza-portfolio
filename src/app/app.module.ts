@@ -25,6 +25,7 @@ import { VideogamesComponent } from './videogames/videogames.component';
 import { AppsComponent } from './apps/apps.component';
 import { MatCardModule } from '@angular/material/card';
 import { NgxMasonryModule } from 'ngx-masonry';
+import { AppLayoutComponent } from './app-layout/app-layout.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,19 +44,10 @@ import { NgxMasonryModule } from 'ngx-masonry';
     ImagePreviewComponent,
     VideogamesComponent,
     AppsComponent,
+    AppLayoutComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
-    FontAwesomeModule,
-    BrowserAnimationsModule,
-    MatDialogModule,
-    MatCardModule,
-    NgxMasonryModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, FontAwesomeModule, BrowserAnimationsModule, MatDialogModule, MatCardModule, NgxMasonryModule],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

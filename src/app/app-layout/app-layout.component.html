@@ -1,0 +1,31 @@
+<div class="oriun">
+  <div class="container-fluid">
+    <div class="row pt-5 justify-content-center align-items-center">
+      <div class="col-md-6 col-11 columns py-5">
+        <h2 class="title">{{title}}</h2>
+        <p class="description pb-3">{{description}}</p>
+        <h4 class="technologies my-0">Technologies:</h4>
+        <p class="tech">{{tecnologies}}</p>
+        <a class="link" [href]="link"><i class="fa fa-arrow-right"></i>{{extraMessage}}</a>
+      </div>
+      <div class="col-md-6 col-11">
+        <!-- <img [src]="screenshots[0]" class="d-block w-100 px-1 px-md-5" alt="...1" /> -->
+        <div id="carouselExampleControls" class="carousel slide carsli px-1 px-md-5" data-bs-ride="carousel">
+          <div class="carousel-inner bord">
+            <div *ngFor="let item of screenshots; let i = index" class="carousel-item" [class.active]="i === 0">
+              <img [src]="item" class="d-block w-100" alt="screenshot" />
+            </div>
+          </div>
+
+          <button class="carousel-control-prev arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next arrow" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
